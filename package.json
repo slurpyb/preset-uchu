@@ -1,0 +1,60 @@
+{
+  "name": "@slurpyb/preset-uchu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Panda CSS Preset for Uchu color palette",
+  "keywords": [
+    "Panda CSS",
+    "Preset",
+    "Uchu",
+    "Colors"
+  ],
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "author": "Jordan Sweeting <slurpyb@fastmail.com> (https://slurpyb.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slurpyb/preset-uchu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slurpyb/preset-uchu/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "turbo run tsup:build",
+    "dev": "turbo run tsup:watch",
+    "test": "vitest",
+    "tsup:watch": "pnpm tsup --watch",
+    "tsup:build": "pnpm tsup",
+    "clean": "rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.53.0",
+    "@pandacss/types": "^0.53.0",
+    "tsup": "^8.4.0",
+    "vitest": "^3.1.1"
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
+}
