@@ -10,6 +10,8 @@ styled-system-studio
 .DS_Store
 *.pem
 
+.turbo
+
 # build
 dist
 
