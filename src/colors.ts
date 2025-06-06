@@ -283,7 +283,6 @@ export const semanticColorTokens: SemanticTokens["colors"] =
         },
       },
     },
-
     orange: {
       default: {
         value: {
@@ -326,21 +325,6 @@ export const semanticColorTokens: SemanticTokens["colors"] =
         },
       },
     },
-    // yang: {
-    //   default: {
-    //     value: {
-    //       _light: "{colors.yang.1}",
-    //       _dark: "{colors.gray.9}",
-    //     },
-    //   },
-    //   fg: { value: { _light: "black", _dark: "white" } },
-    //   text: {
-    //     value: {
-    //       _light: "{colors.gray.9}",
-    //       _dark: "{colors.yang.1}",
-    //     },
-    //   },
-    // },
     bg: {
       canvas: {
         value: { _light: "{colors.gray.1}", _dark: "{colors.gray.9}" },
@@ -357,21 +341,6 @@ export const semanticColorTokens: SemanticTokens["colors"] =
         value: { _light: "{colors.gray.5}", _dark: "{colors.gray.6}" },
       },
     },
-    // fg: {
-    //   DEFAULT: {
-    //     value: { _light: "{colors.gray.9}", _dark: "{colors.gray.1}" },
-    //   },
-    //   muted: {
-    //     value: { _light: "{colors.gray.8}", _dark: "{colors.gray.2}" },
-    //   },
-    //   subtle: {
-    //     value: { _light: "{colors.gray.7}", _dark: "{colors.gray.3}" },
-    //   },
-    //   disabled: {
-    //     value: { _light: "{colors.gray.6}", _dark: "{colors.gray.4}" },
-    //   },
-    //   error: { value: { _light: "{colors.red.9}", _dark: "{colors.red.9}" } },
-    // },
     border: {
       DEFAULT: {
         value: { _light: "{colors.gray.5}", _dark: "{colors.gray.5}" },
