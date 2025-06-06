@@ -42,11 +42,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "turbo run tsup:build",
-    "dev": "turbo run tsup:watch",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "test": "vitest",
-    "tsup:watch": "pnpm tsup --watch",
-    "tsup:build": "pnpm tsup",
     "clean": "rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
